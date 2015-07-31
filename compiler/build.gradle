@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
+
+dependencies {
+    compile project(':library')
+    compile 'com.google.dagger:dagger:2.0.1'
+    compile 'javax.annotation:jsr250-api:1.0'
+    
+    compile 'com.google.auto:auto-common:0.4'
+    compile 'com.squareup:javapoet:1.1.0'
+    compile 'com.github.lukaspili.processor-workflow:processor-workflow:1.0.1'
+
+    //compile 'com.google.android:android:4.0.1.2'
+}

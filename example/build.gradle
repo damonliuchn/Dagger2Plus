@@ -1,0 +1,32 @@
+buildscript {
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "net.masonliu.dagger2plus"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile project(':library')
+    provided 'javax.annotation:jsr250-api:1.0'
+
+    apt project(':compiler')
+    apt 'com.google.dagger:dagger-compiler:2.0.1'
+
+    compile 'com.google.dagger:dagger:2.0.1'
+}

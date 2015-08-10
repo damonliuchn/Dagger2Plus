@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.MasonLiuChn</groupId>
+  <artifactId>Dagger2Plus-compiler</artifactId>
+  <version>1.0.0</version>
+  <versioning>
+    <versions>
+      <version>1.0.0</version>
+    </versions>
+    <lastUpdated>20150810091625</lastUpdated>
+  </versioning>
+</metadata>

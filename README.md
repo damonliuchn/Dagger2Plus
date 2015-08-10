@@ -72,13 +72,12 @@ public class HomeActivity extends BaseActivity {
 
 ```java
 repositories {
-    maven {
-        url "https://jitpack.io"
-    }
+    maven { url "https://github.com/MasonLiuChn/MasonMavenRepository/raw/maven/releases" }
 }
 
 dependencies {
-    compile 'com.github.MasonLiuChn:Dagger2Plus:1.0.0'
+    compile 'net.masonliu:dagger2plus:1.0.0'
+    apt 'net.masonliu:dagger2plus-compiler:1.0.0'
 }
 ```
 
